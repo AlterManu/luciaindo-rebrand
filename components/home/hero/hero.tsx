@@ -1,18 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import Video from "../../common/video";
-
-const pills = [
-  "Perspectiva integrativa",
-  "Informada por trauma y apego",
-  "Sesiones online",
-];
 
 export function Hero() {
   return (
     <section
       id="inicio"
-      // className="h-screen overflow-hidden flex justify-center md:bg-[#fbf6f4] relative"
       className="h-[calc(100vh-75px)] md:h-screen overflow-hidden flex justify-center md:bg-secondary relative"
     >
       <div className="flex mt-24 md:items-center md:mt-0">
@@ -23,28 +15,24 @@ export function Hero() {
               Psicóloga Sanitaria · Psicoterapia online
             </p>
 
-            <h1 className="text-balance font-serif text-[3rem] leading-none tracking-tight text-white sm:text-6xl md:text-[4.5rem]">
-              Un espacio para{" "}
+            <h1 className="text-balance font-serif text-[2.5rem] leading-none tracking-tight text-white sm:text-6xl md:text-[4rem]">
+              Comprender cómo tu{" "}
               <span className="italic text-white md:text-primary">
-                comprender
+                historia
               </span>{" "}
-              tu historia y{" "}
-              <span className="italic text-white md:text-primary">habitar</span>{" "}
-              tus emociones
+              influye en tu{" "}
+              <span className="italic text-white md:text-primary">
+                presente
+              </span>{" "}
+              puede ayudarte a relacionarte de otra manera con vos y con los
+              demás
             </h1>
 
-            <div className="hidden text-white mt-8 max-w-xl space-y-4 text-pretty leading-relaxed md:block">
-              <p className="font-semibold text-xl">
-                A veces no se trata de estar mal, sino de sentir que algo pide
-                ser mirado con más cuidado.
-              </p>
-              {/* <p className="text-base">
-                Acompaño procesos terapéuticos con profundidad y calidez,
-                respetando los tiempos de cada persona: un lugar seguro para
-                poner en palabras lo que duele, entender de dónde viene y
-                encontrar otras formas de vincularte con vos y con los demás.
-              </p> */}
-            </div>
+            <p className="hidden text-accent pr-22 mt-8 md:block font-medium text-xl">
+              Un espacio de psicoterapia online con perspectiva integrativa e
+              informada por trauma y apego, para trabajar experiencias,
+              emociones y vínculos con profundidad y respetando tus tiempos.
+            </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-6 md:gap-2">
               <Link
@@ -73,22 +61,6 @@ export function Hero() {
           />
         </div>
       </div>
-
-      {/* Pills */}
-      {/* <div className="hidden md:block mx-auto max-w-7xl px-6 pb-4 md:px-10">
-        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 rounded-full border border-border px-6 py-3 text-center text-[0.72rem] font-medium uppercase tracking-[0.16em] text-white">
-          {pills.map((pill, index) => (
-            <span key={pill} className="flex items-center gap-3">
-              {index > 0 && (
-                <span className="text-primary" aria-hidden="true">
-                  ·
-                </span>
-              )}
-              {pill}
-            </span>
-          ))}
-        </div>
-      </div> */}
 
       {/* Wavy top divider into the soft pink band */}
       <svg
