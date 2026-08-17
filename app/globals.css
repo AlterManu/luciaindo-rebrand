@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -50,7 +50,7 @@
 :root {
   color-scheme: light;
   /* Palette: navy #071c54, pink #fecee3, soft-pink #f3e7e5, soft-blue #c6d6e2, off-white */
-  --background: #fbf6f4;
+  /* --background: #fbf6f4; */
   --foreground: #071c54;
   --card: #ffffff;
   --card-foreground: #071c54;
