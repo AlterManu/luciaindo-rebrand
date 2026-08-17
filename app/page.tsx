@@ -1,5 +1,5 @@
 import { SiteHeader } from "@/components/home/site-header";
-import { Hero } from "@/components/home/hero/hero";
+import { Hero } from "@/components/home/hero";
 import { Recognition } from "@/components/home/recognition";
 import { ConsultationTopics } from "@/components/home/consultation-topics";
 import { Approach } from "@/components/home/approach";

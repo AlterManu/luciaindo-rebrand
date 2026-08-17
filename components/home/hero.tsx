@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Video from "../../common/video";
+import Video from "../common/video";
 
 export function Hero() {
   return (
@@ -15,15 +15,10 @@ export function Hero() {
               Psicóloga Sanitaria · Psicoterapia online
             </p>
 
-            <h1 className="text-balance font-serif text-[2.5rem] leading-none tracking-tight text-white sm:text-6xl md:text-[4rem]">
+            <h1 className="text-balance font-serif text-[2.2rem] leading-none tracking-tight text-white sm:text-6xl md:text-[4rem]">
               Comprender cómo tu{" "}
-              <span className="italic text-white md:text-primary">
-                historia
-              </span>{" "}
-              influye en tu{" "}
-              <span className="italic text-white md:text-primary">
-                presente
-              </span>{" "}
+              <span className="italic md:text-primary">historia</span> influye
+              en tu <span className="italic md:text-primary">presente</span>{" "}
               puede ayudarte a relacionarte de otra manera con vos y con los
               demás
             </h1>
@@ -34,18 +29,18 @@ export function Hero() {
               emociones y vínculos con profundidad y respetando tus tiempos.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-6 md:gap-2">
+            <div className="mt-9 flex flex-wrap items-center gap-6 md:gap-2 text-base md:text-lg">
               <Link
                 style={{ border: "1px solid white" }}
                 href="#consultar"
-                className="text-black bg-white inline-flex items-center gap-2 rounded-full px-4 py-2 text-lg"
+                className="text-black bg-white inline-flex items-center gap-2 rounded-full px-4 py-2"
               >
                 Reservar una primera consulta
                 <span aria-hidden="true">&rarr;</span>
               </Link>
               <Link
                 href="#enfoque"
-                className="text-lg font-medium px-4 text-white underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
+                className="font-medium px-4 text-white underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
               >
                 Conocer cómo acompaño
               </Link>
