@@ -1,11 +1,72 @@
-import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
 
 const paragraphs = [
-  "Tal vez te cuesta regular lo que sentís, reaccionás con mucha intensidad ante determinadas experiencias o aprendiste a desconectarte de tus emociones para poder continuar.",
-  "Puede que algunos vínculos despierten inseguridad, miedo a perder al otro o una necesidad constante de agradar.",
-  "O que vivas con un nivel de autoexigencia que no te permite descansar, equivocarte ni sentir que lo que hacés es suficiente.",
-  "La terapia puede ofrecerte un espacio para comprender de dónde surgen estas respuestas, qué función tuvieron en tu historia y cómo empezar a construir otras formas de relacionarte con lo que te sucede.",
+  {
+    text: "Tal vez te cuesta regular lo que sentís, reaccionás con mucha intensidad ante determinadas experiencias o aprendiste a desconectarte de tus emociones para poder continuar.",
+    img: "/images/gallery-1.jpg",
+  },
+  {
+    text: "Puede que algunos vínculos despierten inseguridad, miedo a perder al otro o una necesidad constante de agradar.",
+    img: "/images/gallery-2.jpg",
+  },
+  {
+    text: "O que vivas con un nivel de autoexigencia que no te permite descansar, equivocarte ni sentir que lo que hacés es suficiente.",
+    img: "/images/gallery-3.jpg",
+  },
+  {
+    text: "La terapia puede ofrecerte un espacio para comprender de dónde surgen estas respuestas, qué función tuvieron en tu historia y cómo empezar a construir otras formas de relacionarte con lo que te sucede.",
+    img: "/images/gallery-5.jpg",
+  },
 ];
+
+const total = paragraphs.length;
+
+function CarouselDemo() {
+  return (
+    <Carousel className="w-full mt-8">
+      <CarouselContent>
+        {paragraphs.map((item, i) => (
+          <CarouselItem key={i}>
+            <Card className="bg-transparent select-none py-0">
+              <CardContent className="h-112 md:h-[75vh] text-white italic text-shadow-lg relative flex flex-col justify-center items-center">
+                <p
+                  style={{ textShadow: "1px 1px 24px black, 0 0 1em black" }}
+                  className="text-lg mb-4 absolute top-5 right-5"
+                >{`${i + 1}/${total}`}</p>
+
+                <p
+                  style={{ textShadow: "1px 1px 24px black, 0 0 1em black" }}
+                  className="text-2xl"
+                >
+                  {item.text}
+                </p>
+
+                <Image
+                  src={item.img}
+                  className="absolute w-full h-full top-1/2 left-1/2 -translate-1/2 -z-10 object-cover rounded-2xl"
+                  width={500}
+                  height={500}
+                  priority
+                  alt="flores"
+                />
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
+}
 
 export function Recognition() {
   return (
@@ -22,7 +83,7 @@ export function Recognition() {
             así, <span className="italic">siguen afectándote.</span>
           </h2>
 
-          <div className="mt-8 space-y-5">
+          {/* <div className="mt-8 space-y-5">
             {paragraphs.map((text, i) => (
               <p
                 key={i}
@@ -31,22 +92,9 @@ export function Recognition() {
                 {text}
               </p>
             ))}
-          </div>
+          </div> */}
 
-          <p className="mx-auto mt-8 max-w-2xl text-pretty leading-relaxed text-primary-foreground">
-            La terapia puede ofrecerte un espacio para comprender de dónde
-            surgen estas respuestas, qué función tuvieron en tu historia y cómo
-            empezar a construir otras formas de relacionarte con lo que te
-            sucede.
-          </p>
-
-          <Link
-            href="#consultar"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-sm font-medium text-secondary-foreground transition-opacity hover:opacity-90"
-          >
-            Dar el primer paso
-            <span aria-hidden="true">&rarr;</span>
-          </Link>
+          <CarouselDemo />
         </div>
       </div>
     </section>
