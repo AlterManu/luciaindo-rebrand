@@ -18,7 +18,7 @@ const paragraphs = [
     img: "/images/gallery-2.jpg",
   },
   {
-    text: "O que vivas con un nivel de autoexigencia que no te permite descansar, equivocarte ni sentir que lo que hacés es suficiente.",
+    text: "O que vivas con un nivel de autoexigencia que no te permite descansar, equivocarte, ni sentir que lo que hacés es suficiente.",
     img: "/images/gallery-3.jpg",
   },
   {
@@ -29,7 +29,7 @@ const paragraphs = [
 
 const total = paragraphs.length;
 
-function CarouselDemo() {
+function RecognitionCarousel() {
   return (
     <Carousel className="w-full mt-8">
       <CarouselContent>
@@ -80,21 +80,10 @@ export function Recognition() {
           <h2 className="mx-auto mt-6 max-w-2xl text-balance font-serif text-3xl leading-[1.15] tracking-tight text-primary-foreground md:text-[2.9rem]">
             Hay situaciones que podés{" "}
             <span className="italic">comprender racionalmente</span> y que, aun
-            así, <span className="italic">siguen afectándote.</span>
+            así, <span className="italic underline">siguen afectándote:</span>
           </h2>
 
-          {/* <div className="mt-8 space-y-5">
-            {paragraphs.map((text, i) => (
-              <p
-                key={i}
-                className="text-pretty leading-relaxed text-primary-foreground/85"
-              >
-                {text}
-              </p>
-            ))}
-          </div> */}
-
-          <CarouselDemo />
+          <RecognitionCarousel />
         </div>
       </div>
     </section>

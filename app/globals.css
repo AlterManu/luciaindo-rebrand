@@ -110,3 +110,7 @@
 .font-serif {
   font-optical-sizing: auto;
 }
+
+body {
+  overflow-x: hidden;
+}
