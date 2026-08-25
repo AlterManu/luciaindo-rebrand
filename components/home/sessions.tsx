@@ -1,19 +1,15 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const cards = [
   {
-    title: "Cómo son los encuentros",
-    body: "Las sesiones se realizan online por videollamada y duran 50 minutos. Un espacio privado, tranquilo y sostenido, en el que podés hablar con libertad y a tu propio ritmo.",
+    title: "Mi forma de trabajar",
+    body: "Trabajo con una perspectiva integrativa e informada por trauma y apego. Esto significa que no observo únicamente el síntoma o la dificultad actual. También tenemos en cuenta tu historia, tus vínculos, los recursos que desarrollaste para atravesar determinadas experiencias y la manera en que todo eso puede continuar interviniendo en tu presente.",
   },
   {
-    title: "El primer encuentro",
-    body: "Conversamos sobre qué te trae a consulta, tu situación actual y lo que te gustaría trabajar. También es el momento para que conozcas mi forma de acompañar y evaluemos juntas si el encuadre es adecuado para vos.",
+    title: "El espacio terapéutico",
+    body: "El proceso no busca apresurarte ni ofrecer respuestas generales para situaciones complejas. La propuesta es construir un espacio profesional y cuidado en el que podamos comprender lo que te sucede y trabajar de acuerdo con tus necesidades, tus posibilidades y el momento en el que estás.",
   },
-  {
-    title: "Si decidimos continuar",
-    body: "Acordamos la frecuencia de los encuentros según las características del proceso. La terapia avanza respetando tus tiempos, sin apurar ni forzar etapas.",
-  },
-]
+];
 
 export function Sessions() {
   return (
@@ -31,11 +27,12 @@ export function Sessions() {
       <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-2xl text-center text-secondary-foreground">
           <span className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
-            Cómo son las sesiones
+            Enfoque terapéutico
           </span>
           <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.9rem]">
-            El proceso continúa{" "}
-            <span className="italic text-primary">entre encuentros</span>
+            Una terapia que{" "}
+            <span className="italic text-primary underline">no simplifica</span>{" "}
+            lo que te pasa
           </h2>
         </div>
 
@@ -56,5 +53,5 @@ export function Sessions() {
         </div>
       </div>
     </section>
-  )
+  );
 }

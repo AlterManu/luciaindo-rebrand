@@ -39,12 +39,12 @@ function RecognitionCarousel() {
               <CardContent className="h-112 md:h-[75vh] text-white italic text-shadow-lg relative flex flex-col justify-center items-center">
                 <p
                   style={{ textShadow: "1px 1px 24px black, 0 0 1em black" }}
-                  className="text-lg mb-4 absolute top-5 right-5"
+                  className="text-base mb-4 absolute top-5 right-5"
                 >{`${i + 1}/${total}`}</p>
 
                 <p
                   style={{ textShadow: "1px 1px 24px black, 0 0 1em black" }}
-                  className="text-2xl"
+                  className="text-xl"
                 >
                   {item.text}
                 </p>

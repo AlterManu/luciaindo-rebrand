@@ -31,11 +31,10 @@ export function Hero() {
 
             <div className="mt-9 flex flex-wrap items-center gap-6 md:gap-2 text-base md:text-lg">
               <Link
-                style={{ border: "1px solid white" }}
                 href="#consultar"
                 className="text-black bg-white inline-flex items-center gap-2 rounded-full px-4 py-2"
               >
-                Reservar una primera consulta
+                Consultar disponibilidad
                 <span aria-hidden="true">&rarr;</span>
               </Link>
               <Link

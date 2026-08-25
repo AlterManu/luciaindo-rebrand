@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { Plus, Minus } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
@@ -19,29 +19,31 @@ const faqs = [
   },
   {
     q: "¿Qué sucede si necesito cancelar o reprogramar?",
-    a: "Las cancelaciones o reprogramaciones deben informarse con un mínimo de 24 horas hábiles. Fuera de ese plazo, la sesión se abona igualmente, salvo situaciones excepcionales.",
+    a: "Las cancelaciones o reprogramaciones deben informarse con un mínimo de 24 horas hábiles. Fuera de ese plazo, la sesión se abona igualmente.",
   },
   {
     q: "¿Cómo sé si este espacio es adecuado para mí?",
     a: "La primera sesión permite conversar sobre tu motivo de consulta, conocer mi forma de trabajo y evaluar si este encuadre puede acompañar tus necesidades actuales.",
   },
-]
+];
 
 export function Faq() {
-  const [open, setOpen] = useState<number | null>(0)
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="preguntas" className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
+    <section
+      id="preguntas"
+      className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28"
+    >
       <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <div>
           <span className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-muted-foreground">
             Preguntas frecuentes
           </span>
           <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.05] tracking-tight text-foreground md:text-[3.4rem]">
-            Antes de{" "}
-            <span className="italic text-secondary">empezar</span>
+            Antes de <span className="italic text-secondary">empezar</span>
           </h2>
-          <div className="relative mt-8 hidden aspect-[4/5] max-w-xs overflow-hidden rounded-[2rem] bg-muted md:block">
+          <div className="relative mt-8 hidden aspect-4/5 max-w-xs overflow-hidden rounded-[2rem] bg-muted md:block">
             <Image
               src="/images/imaginario.png"
               alt=""
@@ -55,7 +57,7 @@ export function Faq() {
 
         <div className="divide-y divide-border border-t border-border">
           {faqs.map((faq, i) => {
-            const isOpen = open === i
+            const isOpen = open === i;
             return (
               <div key={i}>
                 <button
@@ -92,10 +94,10 @@ export function Faq() {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

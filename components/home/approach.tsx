@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const cards = [
   {
     num: "01",
@@ -26,7 +28,7 @@ const cards = [
       "Estás dispuesta a mirar de frente lo que te sucede.",
     ],
   },
-]
+];
 
 export function Approach() {
   return (
@@ -38,12 +40,14 @@ export function Approach() {
           </span>
           <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.9rem]">
             Una terapia que{" "}
-            <span className="italic text-primary">no simplifica</span> lo que te pasa
+            <span className="italic text-primary underline">no simplifica</span>{" "}
+            lo que te pasa
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-pretty leading-relaxed text-secondary-foreground/80">
-            Trabajo desde una perspectiva integrativa e informada por trauma y apego. No observo
-            únicamente el síntoma: tenemos en cuenta tu historia, tus vínculos y los recursos que
-            desarrollaste para atravesar cada experiencia.
+          <p className="text-left mt-8 max-w-xl text-pretty leading-relaxed text-secondary-foreground/80">
+            Trabajo desde una perspectiva integrativa e informada por trauma y
+            apego. No observo únicamente el síntoma: tenemos en cuenta tu
+            historia, tus vínculos y los recursos que desarrollaste para
+            atravesar cada experiencia.
           </p>
         </div>
 
@@ -51,9 +55,11 @@ export function Approach() {
           {cards.map((card) => (
             <article
               key={card.num}
-              className="flex flex-col rounded-3xl border border-secondary-foreground/15 bg-secondary-foreground/[0.04] p-7"
+              className="flex flex-col rounded-3xl p-7 border border-secondary-foreground/15 bg-secondary-foreground/10"
             >
-              <span className="font-serif text-3xl italic text-primary">{card.num}</span>
+              <span className="font-serif text-3xl italic text-primary">
+                {card.num}
+              </span>
               <h3 className="mt-3 font-serif text-xl tracking-tight text-secondary-foreground">
                 {card.title}
               </h3>
@@ -74,11 +80,21 @@ export function Approach() {
           ))}
         </div>
 
-        <p className="mx-auto mt-12 max-w-3xl text-balance text-center text-sm leading-relaxed text-secondary-foreground/70">
-          No hace falta tenerlo todo ordenado para empezar. Sí ayuda haber recorrido lo suficiente
-          como para querer mirarlo con acompañamiento profesional.
-        </p>
+        <div className="flex flex-col items-center text-sm">
+          <p className="text-sm mt-12 mb-6 max-w-3xl text-balance text-center leading-relaxed text-secondary-foreground/70">
+            No hace falta tenerlo todo ordenado para empezar. Sí ayuda haber
+            recorrido lo suficiente como para querer mirarlo con acompañamiento
+            profesional.
+          </p>
+
+          <Link
+            href="#consultar"
+            className="w-fit font-serif text-primary border border-primary gap-2 rounded-full px-4 py-2"
+          >
+            Quiero conocer la disponibilidad
+          </Link>
+        </div>
       </div>
     </section>
-  )
+  );
 }

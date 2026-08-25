@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 const topics = [
-  "Reconocer, expresar o regular las emociones.",
-  "Experiencias adversas de la infancia que siguen influyendo hoy.",
+  "Dificultades para reconocer, expresar o regular las emociones.",
+  "Experiencias adversas de la infancia que continúan influyendo en el presente.",
   "Patrones vinculares que se repiten una y otra vez.",
   "Apego, miedo al abandono y dificultad para poner límites.",
-  "Autoexigencia, culpa y sensación de no ser suficiente.",
-  "Ansiedad relacionada con los vínculos y la propia historia.",
-  "Identificar y comunicar lo que necesitás.",
-  "Momentos vitales que piden comprensión y acompañamiento.",
+  "Autoexigencia, culpa y sensación persistente de no ser suficiente.",
+  "Trastornos de ansiedad, de estado de ánimo y de personalidad.",
+  "Dificultad para identificar y comunicar lo que necesitás.",
+  "Momentos vitales que requieren comprensión y acompañamiento.",
 ];
 
 const marqueeText = "PSICOTERAPIA CON PERSPECTIVA INTEGRATIVA";
@@ -24,7 +24,7 @@ export function ConsultationTopics() {
         <div className="relative min-h-88 lg:min-h-152">
           <Image
             src="/images/proceso.png"
-            alt="Detalle sereno de un espacio de trabajo terapéutico"
+            alt="Espacio de trabajo"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -33,12 +33,20 @@ export function ConsultationTopics() {
 
         {/* Checklist column */}
         <div className="bg-secondary px-6 py-16 text-secondary-foreground md:px-12 lg:py-20">
-          <h2 className="text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.6rem]">
-            En terapia podemos{" "}
-            <span className="italic text-primary">trabajar</span> sobre:
+          <span className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-secondary-foreground/60 block w-full text-center">
+            Motivos de consulta
+          </span>
+
+          <h2 className="mt-5 text-balance text-center font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.6rem]">
+            ¿Qué podemos <span className="italic text-primary">trabajar</span>{" "}
+            en terapia?
           </h2>
 
-          <ul className="mt-9 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+          <h3 className="mt-8 text-balance font-serif text-base leading-[1.12] tracking-tight md:text-[2.6rem] pl-2">
+            Acompaño procesos vinculados con:
+          </h3>
+
+          <ul className="mt-4 grid gap-x-8 gap-y-6 sm:grid-cols-2">
             {topics.map((topic, i) => (
               <li
                 key={i}
@@ -57,9 +65,7 @@ export function ConsultationTopics() {
           </ul>
 
           <p className="mt-9 text-pretty text-sm leading-relaxed text-secondary-foreground/70 italic">
-            {`<< No necesitás llegar con un diagnóstico ni poder explicar exactamente
-            qué te sucede. La primera sesión también sirve para ordenar el
-            motivo de consulta. >>`}
+            {`<< No necesitás llegar con un diagnóstico ni poder explicar exactamente qué te sucede. La primera sesión también permite ordenar el motivo de consulta y evaluar qué tipo de acompañamiento puede ser adecuado para vos. >>`}
           </p>
         </div>
       </div>
