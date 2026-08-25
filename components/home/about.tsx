@@ -1,10 +1,10 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const credentials = [
   "Perspectiva integrativa",
   "Informada por trauma y apego",
   "Acompañamiento a personas adultas",
-]
+];
 
 export function About() {
   return (
@@ -15,7 +15,7 @@ export function About() {
             aria-hidden="true"
             className="absolute -bottom-5 -right-5 h-full w-full rounded-[2rem] bg-primary md:-bottom-7 md:-right-7"
           />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 bg-muted">
+          <div className="relative aspect-4/5 overflow-hidden rounded-[2rem] border border-border/60 bg-muted">
             <Image
               src="/images/about-lucia.png"
               alt="Lucía Indo en su consulta"
@@ -36,15 +36,17 @@ export function About() {
 
           <div className="mt-7 max-w-xl space-y-5 text-pretty leading-relaxed text-muted-foreground">
             <p>
-              Acompaño a personas adultas desde una perspectiva integrativa, con especial atención a
-              cómo las experiencias tempranas y los vínculos participan en la manera en que hoy
-              sentimos, reaccionamos y nos relacionamos.
+              Acompaño a personas adultas desde una perspectiva integrativa, con
+              especial atención a cómo las experiencias tempranas y los vínculos
+              participan en la manera en que hoy sentimos, reaccionamos y nos
+              relacionamos.
             </p>
             <p>
-              Mi forma de trabajar combina profundidad clínica, formación continua y un
-              acompañamiento cuidadoso. Me interesa que puedas comprender lo que te sucede sin
-              reducir tu experiencia a una etiqueta ni recibir soluciones rápidas para procesos que
-              necesitan ser abordados con seriedad.
+              Mi forma de trabajar combina profundidad clínica, formación
+              continua y un acompañamiento cuidadoso. Me interesa que puedas
+              comprender lo que te sucede sin reducir tu experiencia a una
+              etiqueta ni recibir soluciones rápidas para procesos que necesitan
+              ser abordados con seriedad.
             </p>
             <p className="font-medium text-foreground">
               Formación:{" "}
@@ -66,10 +68,11 @@ export function About() {
           </ul>
 
           <p className="mt-6 text-sm text-muted-foreground">
-            Psicóloga colegiada n.º <span className="text-foreground">[completar]</span>
+            Psicóloga colegiada n.º{" "}
+            <span className="text-foreground">G-7603</span>
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
