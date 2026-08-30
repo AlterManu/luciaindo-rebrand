@@ -41,11 +41,11 @@ export function Faq() {
             Preguntas frecuentes
           </span>
           <h2 className="mt-5 text-balance font-serif text-4xl leading-[1.05] tracking-tight text-foreground md:text-[3.4rem]">
-            Antes de <span className="italic text-secondary">empezar</span>
+            Antes de empezar...
           </h2>
-          <div className="relative mt-8 hidden aspect-4/5 max-w-xs overflow-hidden rounded-[2rem] bg-muted md:block">
+          <div className="relative mt-8 aspect-4/5 max-w-xs overflow-hidden rounded-[2rem] bg-muted">
             <Image
-              src="/images/imaginario.png"
+              src="/images/before-start.jpg"
               alt=""
               fill
               sizes="30vw"

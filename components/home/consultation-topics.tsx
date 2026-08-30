@@ -19,11 +19,11 @@ const imageSrcB = "/images/leaves-2.png";
 export function ConsultationTopics() {
   return (
     <section id="motivos">
-      <div className="grid lg:grid-cols-2">
+      <div className="grid md:grid-cols-[0.75fr_1.25fr]">
         {/* Image column */}
-        <div className="relative min-h-88 lg:min-h-152">
+        <div className="relative h-[40vh] md:h-full">
           <Image
-            src="/images/proceso.png"
+            src="/images/work.jpg"
             alt="Espacio de trabajo"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

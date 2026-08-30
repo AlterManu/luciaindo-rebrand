@@ -93,7 +93,7 @@ export function Approach() {
 
           <Link
             href="#consultar"
-            className="w-fit font-serif text-primary border border-primary gap-2 rounded-full px-4 py-2"
+            className="w-fit font-serif text-base mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2"
           >
             Quiero conocer la disponibilidad
           </Link>
