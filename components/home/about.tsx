@@ -56,7 +56,7 @@ export function About() {
             <p className="font-medium text-foreground underline my-1">
               Formación
             </p>
-            <ul className="text-sm">
+            <ul>
               <li>
                 ○ Licenciada en Psicología - Universidad Nacional de Mar del
                 Plata

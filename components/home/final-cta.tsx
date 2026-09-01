@@ -1,3 +1,7 @@
+import { FaWhatsapp } from "react-icons/fa6";
+import { WA_LINK } from "../constants/walink";
+import Link from "next/link";
+
 export function FinalCta() {
   return (
     <section id="consultar" className="bg-secondary text-secondary-foreground">
@@ -15,9 +19,15 @@ export function FinalCta() {
             breve para conocer la disponibilidad actual y coordinar una primera
             sesión. Te respondo personalmente.
           </p>
-          <button className="mt-10 w-fit font-serif bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2">
+          <Link
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 w-fit font-serif bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2 inline-flex items-center gap-1"
+          >
             Quiero solicitar una sesión
-          </button>
+            <FaWhatsapp className="text-xl" />
+          </Link>
         </div>
         <p className="text-sm">Sesiones online · España / Argentina</p>
       </div>

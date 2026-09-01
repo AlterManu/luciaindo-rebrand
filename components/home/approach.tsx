@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { WA_LINK } from "../constants/walink";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const cards = [
   {
@@ -92,10 +94,13 @@ export function Approach() {
           </p>
 
           <Link
-            href="#consultar"
-            className="w-fit font-serif text-base mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2"
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit font-serif text-base mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2 flex items-center gap-1"
           >
-            Quiero conocer la disponibilidad
+            <p>Quiero conocer la disponibilidad</p>
+            <FaWhatsapp className="text-xl" />
           </Link>
         </div>
       </div>

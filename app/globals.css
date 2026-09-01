@@ -113,4 +113,12 @@
 
 body {
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 }

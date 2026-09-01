@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Video from "../common/video";
+import { FaWhatsapp } from "react-icons/fa";
+import { WA_LINK } from "../constants/walink";
 
 export function Hero() {
   return (
@@ -29,17 +31,19 @@ export function Hero() {
               emociones y vínculos con profundidad y respetando tus tiempos.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-6 md:gap-2 text-base md:text-lg">
+            <div className="mt-9 font-serif flex flex-wrap items-center gap-6 md:gap-2 text-base md:text-lg">
               <Link
-                href="#consultar"
+                href={WA_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-black bg-white inline-flex items-center gap-2 rounded-full px-4 py-2"
               >
                 Consultar disponibilidad
-                <span aria-hidden="true">&rarr;</span>
+                <FaWhatsapp className="text-2xl text-primary" />
               </Link>
               <Link
                 href="#enfoque"
-                className="font-medium px-4 text-white underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
+                className="px-4 text-white underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
               >
                 Conocer cómo acompaño
               </Link>
