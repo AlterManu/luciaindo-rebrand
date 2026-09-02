@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-10">
         <Link href="#inicio" className="flex flex-col leading-none">
-          <span className="font-serif font-semibold text-xl tracking-tight text-foreground">
+          <span className="font-serif font-medium text-2xl tracking-tight text-foreground">
             Lucía<span className="italic">Indo.</span>
           </span>
           <span className="mt-1 text-[0.65rem] font-medium uppercase tracking-[0.25em] text-muted-foreground">
@@ -35,14 +35,6 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-
-        {/* <Link
-          href="#consultar"
-          className="inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground transition-opacity hover:opacity-90"
-        >
-          Reservar consulta
-          <span aria-hidden="true">&rarr;</span>
-        </Link> */}
       </div>
     </header>
   );
