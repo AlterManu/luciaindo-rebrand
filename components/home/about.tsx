@@ -31,7 +31,7 @@ export function About() {
             Sobre mí
           </span>
           <h2 className="w-full block text-center mt-5 text-balance font-serif text-4xl leading-[1.08] tracking-tight text-foreground md:text-[3.2rem]">
-            Soy Lucía Indo<span className="italic">,</span> psicóloga sanitaria
+            Soy Lucía Indo, <span className="italic">psicóloga sanitaria</span>
           </h2>
 
           <div className="md:hidden relative h-[50vh] rounded-2xl overflow-hidden mt-6">
