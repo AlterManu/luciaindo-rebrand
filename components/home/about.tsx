@@ -21,24 +21,24 @@ const MainImage = () => {
 export function About() {
   return (
     <section id="sobre-mi" className="bg-accent/50">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-[0.85fr_1.15fr] md:gap-16 md:px-10 md:py-28">
-        <div className="hidden md:block relative h-full rounded-2xl overflow-hidden">
+      <div className="mx-auto grid md:max-w-2xl lg:max-w-4xl xl:max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1.15fr] md:gap-16 md:px-10 md:py-28">
+        <div className="hidden lg:block relative h-full rounded-2xl overflow-hidden">
           <MainImage />
         </div>
 
         <div>
-          <span className="w-full block text-center text-[0.72rem] font-medium uppercase tracking-[0.24em] text-muted-foreground">
+          <span className="w-full block text-center lg:text-left text-[0.72rem] xl:text-base font-medium uppercase tracking-[0.24em] text-muted-foreground">
             Sobre mí
           </span>
-          <h2 className="w-full block text-center mt-5 text-balance font-serif text-4xl leading-[1.08] tracking-tight text-foreground md:text-[3.2rem]">
+          <h2 className="w-full block text-center lg:text-left mt-5 text-balance font-serif leading-[1.08] tracking-tight text-foreground text-3xl md:text-[2.9rem] px-10 sm:px-16 lg:px-0">
             Soy Lucía Indo, <span className="italic">psicóloga sanitaria</span>
           </h2>
 
-          <div className="md:hidden relative h-[50vh] rounded-2xl overflow-hidden mt-6">
+          <div className="lg:hidden relative h-[50vh] sm:h-[75vh] md:h-[85vh] rounded-2xl overflow-hidden mt-6">
             <MainImage />
           </div>
 
-          <div className="mt-7 max-w-xl space-y-5 text-pretty leading-relaxed text-muted-foreground">
+          <div className="mt-7 mx-4 lg:ml-0 space-y-5 text-pretty leading-relaxed text-muted-foreground">
             <p>
               Acompaño a personas adultas desde una perspectiva integrativa, con
               especial atención a cómo las experiencias tempranas y los vínculos
