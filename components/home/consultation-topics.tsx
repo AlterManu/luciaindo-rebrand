@@ -33,12 +33,12 @@ export function ConsultationTopics() {
           </div>
 
           {/* Checklist column */}
-          <div className="mx-auto flex flex-col justify-center max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl px-6 py-16 text-secondary-foreground lg:px-12 lg:py-20">
+          <div className="mx-auto flex flex-col justify-center max-w-2xl lg:max-w-4xl xl:max-w-7xl px-6 py-16 text-secondary-foreground lg:px-12 lg:py-20">
             <span className="text-[0.72rem] xl:text-base font-medium uppercase tracking-[0.24em] text-secondary-foreground/60 block w-full text-center">
               Motivos de consulta
             </span>
 
-            <h2 className="mt-5 text-balance text-center font-serif leading-[1.12] tracking-tight text-3xl md:text-[2.9rem] ">
+            <h2 className="mt-5 text-balance text-center font-serif leading-[1.12] tracking-tight text-3xl md:text-[2.9rem]">
               ¿Qué podemos <span className="italic text-primary">trabajar</span>{" "}
               en terapia?
             </h2>

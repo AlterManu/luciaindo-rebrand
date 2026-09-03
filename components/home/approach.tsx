@@ -43,17 +43,17 @@ const cards = [
 export function Approach() {
   return (
     <section id="enfoque" className="bg-secondary text-secondary-foreground">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+      <div className="mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-7xl px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
+          <span className="text-[0.72rem] xl:text-base font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
             El proceso
           </span>
-          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.9rem]">
+          <h2 className="mt-5 text-balance font-serif leading-[1.12] tracking-tight text-3xl md:text-[2.9rem]">
             ¿Cómo sería{" "}
             <span className="italic text-primary">empezar terapia</span>{" "}
             conmigo?
           </h2>
-          <p className="text-left text-sm mt-8 max-w-xl text-pretty leading-relaxed text-secondary-foreground/80">
+          <p className="px-4 lg:px-8 text-left lg:text-center text-sm md:text-base mt-8 text-pretty leading-relaxed text-secondary-foreground/80">
             En terapia no vas a encontrar juicios, presión ni recetas mágicas.
             Vas a encontrar un espacio seguro donde poder hablar con calma,
             sintonizar con tu cuerpo y tu mente, y trabajar paso a paso con un
@@ -61,7 +61,7 @@ export function Approach() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
             <article
               key={card.num}
@@ -73,6 +73,7 @@ export function Approach() {
               <h3 className="mt-3 font-serif text-xl tracking-tight text-secondary-foreground">
                 {card.title}
               </h3>
+
               <ul className="mt-5 space-y-3.5">
                 {card.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -87,7 +88,7 @@ export function Approach() {
         </div>
 
         <div className="flex flex-col items-center text-sm">
-          <p className="text-sm mt-12 mb-6 max-w-3xl text-balance text-center leading-relaxed text-secondary-foreground/70">
+          <p className="text-sm md:text-base lg:text-lg mt-12 mb-6 max-w-3xl text-balance text-center leading-relaxed text-secondary-foreground/70">
             No hace falta tenerlo todo ordenado para empezar. Sí ayuda haber
             recorrido lo suficiente como para querer mirarlo con acompañamiento
             profesional.
@@ -97,7 +98,7 @@ export function Approach() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit font-serif text-base mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 py-2 flex items-center gap-1"
+            className="w-fit font-serif text-base lg:text-xl mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 lg:px-8 py-2 flex items-center gap-1"
           >
             <p>Quiero conocer la disponibilidad</p>
             <FaWhatsapp className="text-xl" />
