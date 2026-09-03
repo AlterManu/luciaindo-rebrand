@@ -30,9 +30,9 @@ export function Sessions() {
       />
       <div aria-hidden="true" className="absolute inset-0 bg-secondary/85" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
+      <div className="relative mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-2xl text-center text-secondary-foreground">
-          <span className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
+          <span className="text-[0.72rem] xl:text-base font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
             Enfoque terapéutico
           </span>
           <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.9rem]">
@@ -42,19 +42,19 @@ export function Sessions() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 grid-cols-1 md:grid-cols-2">
           {cards.map((card) => (
             <article
               key={card.title}
               className="rounded-3xl border border-border/70 bg-card/95 p-7 backdrop-blur"
             >
-              <h3 className="font-serif text-xl tracking-tight text-card-foreground">
+              <h3 className="font-serif text-xl lg:text-2xl tracking-tight text-card-foreground">
                 {card.title}
               </h3>
-              <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-pretty text-sm lg:text-base leading-relaxed text-muted-foreground">
                 {card.body1}
               </p>
-              <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-pretty text-sm lg:text-base leading-relaxed text-muted-foreground">
                 {card.body2}
               </p>
             </article>
