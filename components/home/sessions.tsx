@@ -35,7 +35,7 @@ export function Sessions() {
           <span className="text-[0.72rem] xl:text-base font-medium uppercase tracking-[0.24em] text-secondary-foreground/60">
             Enfoque terapéutico
           </span>
-          <h2 className="mt-5 text-balance font-serif text-3xl leading-[1.12] tracking-tight md:text-[2.9rem]">
+          <h2 className="mt-5 text-balance font-serif leading-[1.12] tracking-tight text-3xl md:text-[2.9rem]">
             Una terapia que{" "}
             <span className="italic text-primary underline">no simplifica</span>{" "}
             lo que te pasa
