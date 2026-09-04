@@ -44,7 +44,7 @@ export function Hero() {
                 className="text-black bg-white inline-flex items-center gap-2 rounded-full px-4 xl:px-6 py-2 hover:scale-[102%] transition-all duration-300"
               >
                 Consultar disponibilidad
-                <FaWhatsapp className="text-2xl text-primary" />
+                <FaWhatsapp className="text-2xl mb-0.5 text-primary" />
               </Link>
               <Link
                 href="#enfoque"

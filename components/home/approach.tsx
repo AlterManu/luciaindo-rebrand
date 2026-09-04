@@ -98,10 +98,10 @@ export function Approach() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit font-serif text-base lg:text-xl mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 lg:px-8 py-2 flex items-center gap-1"
+            className="w-fit font-serif text-base lg:text-xl mt-4 bg-primary text-secondary hover:bg-accent transition-all duration-400 rounded-xl px-6 lg:px-8 py-2 flex items-center gap-1.5"
           >
             <p>Quiero conocer la disponibilidad</p>
-            <FaWhatsapp className="text-xl" />
+            <FaWhatsapp className="text-xl mb-0.5" />
           </Link>
         </div>
       </div>
