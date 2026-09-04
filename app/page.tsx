@@ -1,13 +1,13 @@
-import { SiteHeader } from "@/components/landing/site-header"
-import { Hero } from "@/components/landing/hero"
-import { Recognition } from "@/components/landing/recognition"
-import { ConsultationTopics } from "@/components/landing/consultation-topics"
-import { Approach } from "@/components/landing/approach"
-import { Sessions } from "@/components/landing/sessions"
-import { About } from "@/components/landing/about"
-import { Faq } from "@/components/landing/faq"
-import { FinalCta } from "@/components/landing/final-cta"
-import { SiteFooter } from "@/components/landing/site-footer"
+import { SiteHeader } from "@/components/home/site-header";
+import { Hero } from "@/components/home/hero";
+import { Recognition } from "@/components/home/recognition";
+import { ConsultationTopics } from "@/components/home/consultation-topics";
+import { Approach } from "@/components/home/approach";
+import { Sessions } from "@/components/home/sessions";
+import { About } from "@/components/home/about";
+import { Faq } from "@/components/home/faq";
+import { FinalCta } from "@/components/home/final-cta";
+import { SiteFooter } from "@/components/home/site-footer";
 
 export default function Page() {
   return (
@@ -25,5 +25,5 @@ export default function Page() {
       </main>
       <SiteFooter />
     </div>
-  )
+  );
 }
