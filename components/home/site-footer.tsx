@@ -14,9 +14,9 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-6 py-14 md:px-10">
-        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col leading-none">
-            <span className="font-serif text-2xl tracking-tight text-foreground">
+            <span className="font-serif font-medium text-2xl tracking-tight text-foreground">
               Lucía<span className="italic">Indo.</span>
             </span>
             <span className="mt-1.5 text-[0.65rem] font-medium uppercase tracking-[0.25em] text-muted-foreground">
@@ -51,7 +51,7 @@ export function SiteFooter() {
           </p>
         </div>
 
-        <div className="border-t border-border pt-4 mt-4 flex gap-1 text-pretty text-xs leading-relaxed text-muted-foreground md:flex-row md:items-center md:justify-between">
+        <div className="border-t border-border pt-4 mt-4 flex gap-1 text-pretty text-xs leading-relaxed text-muted-foreground">
           <p className="max-w-xl">Creado con ♥ por</p>
           <Link
             className="underline cursor-pointer text-secondary"
