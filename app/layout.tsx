@@ -36,6 +36,21 @@ export const metadata: Metadata = {
     ],
     apple: "/favicon-32x32.png",
   },
+  openGraph: {
+    title: "Lucía Indo · Psicoterapia online",
+    description: "Lucía Indo · Psicoterapia online",
+    url: "https://luciaindo.com",
+    siteName: "Lucía Indo · Psicoterapia online",
+    images: [
+      {
+        url: "/favicon-32x32.png",
+        width: 256,
+        height: 256,
+        alt: "Lucía Indo",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
