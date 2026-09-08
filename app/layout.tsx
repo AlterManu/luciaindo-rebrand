@@ -1,7 +1,7 @@
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -58,19 +58,22 @@ export const viewport: Viewport = {
   themeColor: "#f3e7e5",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type RootLayoutType = { children: React.ReactNode };
+
+export default function RootLayout({ children }: Readonly<RootLayoutType>) {
   return (
     <html
       lang="es"
-      className={`${fraunces.variable} ${dmSans.variable} bg-background`}
+      className={`${fraunces.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
     >
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === "production" && <Analytics />}
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="88fa86d7-c16f-4506-b7b8-a66bb46e7287"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
